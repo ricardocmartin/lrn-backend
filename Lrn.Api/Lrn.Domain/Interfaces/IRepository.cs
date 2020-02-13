@@ -11,7 +11,7 @@ namespace Lrn.Domain.Interfaces
 
         void Update(T obj);
 
-        void Remove(int id);
+        void Remove<T>(int id);
 
         T Select(int id);
 

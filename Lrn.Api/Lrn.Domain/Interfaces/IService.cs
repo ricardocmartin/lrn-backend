@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FluentValidation;
+using Lrn.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,7 +12,7 @@ namespace Lrn.Domain.Interfaces
 
 		T Put<V>(T obj) where V : AbstractValidator<T>;
 
-		void Delete(int id);
+		void Delete(T obj);
 
 		T Get(int id);
 

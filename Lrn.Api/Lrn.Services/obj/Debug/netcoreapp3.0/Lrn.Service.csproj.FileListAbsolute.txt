@@ -1,0 +1,15 @@
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Service.deps.json
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Service.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Service.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Domain.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Infra.Data.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Domain.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\bin\Debug\netcoreapp3.0\Lrn.Infra.Data.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\obj\Debug\netcoreapp3.0\Lrn.Service.csprojAssemblyReference.cache
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\obj\Debug\netcoreapp3.0\Lrn.Service.AssemblyInfoInputs.cache
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\obj\Debug\netcoreapp3.0\Lrn.Service.AssemblyInfo.cs
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\obj\Debug\netcoreapp3.0\Lrn.Service.csproj.CopyComplete
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\obj\Debug\netcoreapp3.0\Lrn.Service.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Services\obj\Debug\netcoreapp3.0\Lrn.Service.pdb

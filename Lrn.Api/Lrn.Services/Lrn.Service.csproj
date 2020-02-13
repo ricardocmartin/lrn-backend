@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lrn.Domain\Lrn.Domain.csproj" />
+    <ProjectReference Include="..\Lrn.Infra.CrossCutting\Lrn.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\Lrn.Infra.Data\Lrn.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.1" />
+  </ItemGroup>
 
 </Project>

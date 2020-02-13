@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lrn.Api", "Lrn.Api\Lrn.Api.csproj", "{6787D993-7F20-4585-BB60-1054E51493A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lrn.Api", "Lrn.Api\Lrn.Api.csproj", "{6787D993-7F20-4585-BB60-1054E51493A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lrn.Aplication", "Lrn.Aplication\Lrn.Aplication.csproj", "{B4378198-9DE1-4783-8103-E2990B693477}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lrn.Aplication", "Lrn.Aplication\Lrn.Aplication.csproj", "{B4378198-9DE1-4783-8103-E2990B693477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lrn.Domain", "Lrn.Domain\Lrn.Domain.csproj", "{6E882125-904F-439B-9C4E-33AD8C2F1E11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lrn.Domain", "Lrn.Domain\Lrn.Domain.csproj", "{6E882125-904F-439B-9C4E-33AD8C2F1E11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lrn.Service", "Lrn.Services\Lrn.Service.csproj", "{1A89B3B7-E9BF-47F8-846B-934B8EF53257}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lrn.Service", "Lrn.Services\Lrn.Service.csproj", "{1A89B3B7-E9BF-47F8-846B-934B8EF53257}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lrn.Infra.Data", "Lrn.Infra.Data\Lrn.Infra.Data.csproj", "{4A4F51A0-B278-4BAC-B971-FE612A2B7B85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lrn.Infra.Data", "Lrn.Infra.Data\Lrn.Infra.Data.csproj", "{4A4F51A0-B278-4BAC-B971-FE612A2B7B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lrn.Infra.CrossCutting", "Lrn.Infra.CrossCutting\Lrn.Infra.CrossCutting.csproj", "{F3285406-2E95-4660-BF5C-35CA7E29AC58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lrn.Infra.CrossCutting", "Lrn.Infra.CrossCutting\Lrn.Infra.CrossCutting.csproj", "{F3285406-2E95-4660-BF5C-35CA7E29AC58}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{E8ED2C80-A063-4061-A1B2-CC9EABE72123}"
 EndProject
