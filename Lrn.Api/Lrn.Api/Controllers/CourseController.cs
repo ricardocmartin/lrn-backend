@@ -91,6 +91,7 @@ namespace Lrn.Api.Controllers
             }
         }
 
+        [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
             try

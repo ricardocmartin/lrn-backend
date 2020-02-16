@@ -11,7 +11,7 @@ namespace Lrn.Infra.Data.Mapping
         public CourseClassMapper()
         {
             Table("tb_course");
-            Map(x => x.Id).Column("ID").Key(KeyType.Guid);
+            Map(x => x.Id).Column("ID").Key(KeyType.Identity);
             Map(x => x.Name).Column("Name");
             Map(x => x.Description).Column("Description");
 

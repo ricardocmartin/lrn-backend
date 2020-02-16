@@ -1,8 +1,7 @@
-C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.csprojAssemblyReference.cache
-C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.AssemblyInfoInputs.cache
-C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.AssemblyInfo.cs
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\bin\Debug\netcoreapp3.0\Lrn.Domain.deps.json
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\bin\Debug\netcoreapp3.0\Lrn.Domain.dll
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\bin\Debug\netcoreapp3.0\Lrn.Domain.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.AssemblyInfoInputs.cache
+C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.AssemblyInfo.cs
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.dll
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.pdb

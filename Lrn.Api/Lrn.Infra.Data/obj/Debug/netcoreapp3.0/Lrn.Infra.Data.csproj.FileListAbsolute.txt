@@ -1,11 +1,11 @@
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\bin\Debug\netcoreapp3.0\Lrn.Infra.Data.deps.json
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\bin\Debug\netcoreapp3.0\Lrn.Infra.Data.dll
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\bin\Debug\netcoreapp3.0\Lrn.Infra.Data.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\bin\Debug\netcoreapp3.0\Lrn.Domain.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\bin\Debug\netcoreapp3.0\Lrn.Domain.pdb
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\obj\Debug\netcoreapp3.0\Lrn.Infra.Data.csprojAssemblyReference.cache
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\obj\Debug\netcoreapp3.0\Lrn.Infra.Data.AssemblyInfoInputs.cache
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\obj\Debug\netcoreapp3.0\Lrn.Infra.Data.AssemblyInfo.cs
+C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\obj\Debug\netcoreapp3.0\Lrn.Infra.Data.csproj.CopyComplete
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\obj\Debug\netcoreapp3.0\Lrn.Infra.Data.dll
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\obj\Debug\netcoreapp3.0\Lrn.Infra.Data.pdb
-C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\bin\Debug\netcoreapp3.0\Lrn.Domain.dll
-C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\bin\Debug\netcoreapp3.0\Lrn.Domain.pdb
-C:\src\lrn-backend\Lrn.Api\Lrn.Infra.Data\obj\Debug\netcoreapp3.0\Lrn.Infra.Data.csproj.CopyComplete
