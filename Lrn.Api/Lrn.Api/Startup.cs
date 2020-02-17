@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore;
 using DocumentFormat.OpenXml.EMMA;
+using Lrn.Aplication.Interfaces;
 
 namespace Lrn.Api
 {
@@ -31,6 +32,9 @@ namespace Lrn.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<ICourseFacade, CourseFacade>();
+            services.AddTransient<ICourseTopicFacade, CourseTopicFacade>();
+            services.AddTransient<IContentFacade, ContentFacade>();
+            services.AddTransient<IContentVoteFacade, ContentVoteFacade>();
             services.AddControllers();
             
             services.AddSwaggerGen(c =>

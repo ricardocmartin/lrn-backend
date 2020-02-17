@@ -5,3 +5,4 @@ C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.Assembl
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.AssemblyInfo.cs
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.dll
 C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Domain\obj\Debug\netcoreapp3.0\Lrn.Domain.csprojAssemblyReference.cache

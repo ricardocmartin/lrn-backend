@@ -1,4 +1,5 @@
-﻿using Lrn.Domain.Entities;
+﻿using Lrn.Aplication.Interfaces;
+using Lrn.Domain.Entities;
 using Lrn.Service.Services;
 using Lrn.Service.Validators;
 using System;
@@ -23,12 +24,12 @@ namespace Lrn.Aplication.Facades
 
         public void Update(Course obj)
         {
-            service.Put<ContentValidator>(obj);
+            service.Put<CourseValidator>(obj);
         }
 
         public void Insert(Course obj)
         {
-            service.Post<ContentValidator>(obj);
+            service.Post<CourseValidator>(obj);
         }
         public void Delete(int _Id)
         {

@@ -1,4 +1,8 @@
-﻿DROP TABLE IF EXISTS `tb_course`;
+﻿DROP TABLE IF EXISTS `tb_content_vote`;
+DROP TABLE IF EXISTS `tb_course_topic`;
+DROP TABLE IF EXISTS `tb_content`;
+DROP TABLE IF EXISTS `tb_course`;
+
 CREATE TABLE `tb_course` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
@@ -11,7 +15,7 @@ CREATE TABLE `tb_course` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `tb_course_topic`;
+
 CREATE TABLE `tb_course_topic` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `CourseID` int(11) NOT NULL,
@@ -28,7 +32,7 @@ CREATE TABLE `tb_course_topic` (
   CONSTRAINT `course_topic_ibfk_1` FOREIGN KEY (`CourseID`) REFERENCES `tb_course` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
-DROP TABLE IF EXISTS `tb_content`;
+
 CREATE TABLE `tb_content` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
@@ -39,13 +43,10 @@ CREATE TABLE `tb_content` (
   `CreationDate` datetime DEFAULT CURRENT_TIMESTAMP,
   `ModificationDate` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `Transcript` text,
-  PRIMARY KEY (`ID`),
-  KEY `CourseID` (`CourseID`),
-  CONSTRAINT `content_ibfk_1` FOREIGN KEY (`CourseID`) REFERENCES `tb_course` (`ID`)
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 
-DROP TABLE IF EXISTS `tb_content_vote`;
 CREATE TABLE `tb_content_vote` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`ID`),
@@ -53,5 +54,8 @@ CREATE TABLE `tb_content_vote` (
   `CourseTopicID` int(11) NOT NULL,
   KEY `ContentID` (`ContentID`),
   KEY `CourseTopicID` (`CourseTopicID`),
-  CONSTRAINT `content_topic_ibfk_1` FOREIGN KEY (`CourseTopicID`) REFERENCES `tb_content_topic` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+  CONSTRAINT `content_vote_ibfk_1` FOREIGN KEY (`ContentID`) REFERENCES `tb_content` (`ID`),
+  CONSTRAINT `content_vote_ibfk_2` FOREIGN KEY (`CourseTopicID`) REFERENCES `tb_course_topic` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8MB4;
+
+
