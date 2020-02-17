@@ -14,7 +14,8 @@ namespace Lrn.Infra.Data.Mapping
             Map(x => x.Id).Column("ID").Key(KeyType.Identity);
             Map(x => x.Name).Column("Name");
             Map(x => x.Description).Column("Description");
-
+            Map(x => x.Thumbnail).Column("Thumbnail");
+            Map(x => x.Idiom).Column("Idiom");
         }
     }
 }

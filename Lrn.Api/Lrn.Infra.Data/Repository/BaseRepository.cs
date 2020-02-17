@@ -18,6 +18,10 @@ namespace Lrn.Infra.Data.Repository
         public BaseRepository()
         {
             DapperExtensions.DapperExtensions.SetMappingAssemblies(new[] { typeof(CourseClassMapper).Assembly });
+            DapperExtensions.DapperExtensions.SetMappingAssemblies(new[] { typeof(CourseTopicClassMapper).Assembly });
+            DapperExtensions.DapperExtensions.SetMappingAssemblies(new[] { typeof(ContentVoteClassMapper).Assembly });
+            DapperExtensions.DapperExtensions.SetMappingAssemblies(new[] { typeof(ContentClassMapper).Assembly });
+            
             DapperExtensions.DapperExtensions.SqlDialect = new DapperExtensions.Sql.MySqlDialect();
         }
 

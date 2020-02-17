@@ -23,12 +23,12 @@ namespace Lrn.Aplication.Facades
 
         public void Update(Course obj)
         {
-            service.Put<CourseValidator>(obj);
+            service.Put<ContentValidator>(obj);
         }
 
         public void Insert(Course obj)
         {
-            service.Post<CourseValidator>(obj);
+            service.Post<ContentValidator>(obj);
         }
         public void Delete(int _Id)
         {
