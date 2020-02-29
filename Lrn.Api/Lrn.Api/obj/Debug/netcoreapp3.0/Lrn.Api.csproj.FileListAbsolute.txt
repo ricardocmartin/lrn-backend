@@ -143,11 +143,11 @@ C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Lrn.Service.pdb
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.csprojAssemblyReference.cache
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\staticwebassets\Lrn.Api.StaticWebAssets.Manifest.cache
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\staticwebassets\Lrn.Api.StaticWebAssets.xml
-C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.AssemblyInfoInputs.cache
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.AssemblyInfo.cs
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.RazorTargetAssemblyInfo.cache
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.csproj.CopyComplete
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.dll
 C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.pdb
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\obj\Debug\netcoreapp3.0\Lrn.Api.MvcApplicationPartsAssemblyInfo.cache
