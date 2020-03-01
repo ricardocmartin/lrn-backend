@@ -25,7 +25,6 @@ namespace Lrn.Api.Controllers
         {
             try
             {
-
                 return new ObjectResult(facade.List());
             }
             catch (Exception ex)

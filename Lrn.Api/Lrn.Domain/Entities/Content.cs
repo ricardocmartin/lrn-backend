@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Lrn.Domain.Entities
@@ -11,5 +12,7 @@ namespace Lrn.Domain.Entities
         public string Thumbnail { get; set; }
         public string Idiom { get; set; }
         public string Transcript { get; set; }
+        public DateTime Created { get; set; }
+        public DateTime Modificated { get; set; }
     }
 }

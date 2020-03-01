@@ -10,5 +10,7 @@ namespace Lrn.Domain.Entities
         public string Description { get; set; }
         public string Thumbnail { get; set; }
         public string Idiom { get; set; }
+        public DateTime Created { get; set; }
+        public DateTime Modificated { get; set; }
     }
 }

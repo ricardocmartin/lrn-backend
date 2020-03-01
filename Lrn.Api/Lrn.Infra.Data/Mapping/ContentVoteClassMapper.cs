@@ -11,7 +11,7 @@ namespace Lrn.Infra.Data.Mapping
             Map(x => x.Id).Column("ID").Key(KeyType.Identity);
             Map(x => x.ContentID).Column("ContentID");
             Map(x => x.CourseTopicID).Column("CourseTopicID");
-            Map(x => x.Created).Column("Created");
+            Map(x => x.Created).Column("CreationDate");
         }
     }
 }

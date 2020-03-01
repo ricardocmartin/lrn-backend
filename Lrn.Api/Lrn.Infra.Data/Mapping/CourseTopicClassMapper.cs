@@ -15,6 +15,8 @@ namespace Lrn.Infra.Data.Mapping
             Map(x => x.Thumbnail).Column("Thumbnail");
             Map(x => x.Idiom).Column("Idiom");
             Map(x => x.Sequence).Column("Sequence");
+            Map(x => x.Created).Column("CreationDate");
+            Map(x => x.Modificated).Column("ModificationDate");
         }
     }
 }
