@@ -16,6 +16,8 @@ using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore;
 using DocumentFormat.OpenXml.EMMA;
 using Lrn.Aplication.Interfaces;
+using Microsoft.Extensions.Caching.Distributed;
+using Lrn.Infra.CrossCutting;
 
 namespace Lrn.Api
 {
@@ -41,10 +43,20 @@ namespace Lrn.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Values API", Version= "v1"});
             });
+
+
+
+            services.AddDistributedMemoryCache();
+            /*
+            services.AddDistributedRedisCache(option =>
+            {
+                option.Configuration = "127.0.0.1";
+                option.InstanceName = "master";
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDistributedCache cache)
         {
             if (env.IsDevelopment())
             {
@@ -67,6 +79,10 @@ namespace Lrn.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Values Api V1");
             });
+
+            CacheManager.Configure(cache);
+
+
         }
     }
 }

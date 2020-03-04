@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj": {}
+    "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj": {}
   },
   "projects": {
-    "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
+    "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj",
+        "projectUniqueName": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj",
         "projectName": "Lrn.Domain",
-        "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\obj\\",
+        "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj",
+        "packagesPath": "C:\\Users\\crmart51\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\crmart51\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,6 +53,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -64,24 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj": {
+    "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj",
+        "projectUniqueName": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj",
         "projectName": "Lrn.Infra.CrossCutting",
-        "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\obj\\",
+        "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\crmart51\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\crmart51\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,8 +102,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
-                "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj"
+              "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
+                "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj"
               }
             }
           }
@@ -118,6 +126,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -126,24 +148,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj": {
+    "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj",
+        "projectUniqueName": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj",
         "projectName": "Lrn.Infra.Data",
-        "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\obj\\",
+        "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\crmart51\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\crmart51\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,8 +175,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
-                "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj"
+              "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
+                "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj"
               }
             }
           }
@@ -198,6 +217,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -206,24 +239,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj": {
+    "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj",
+        "projectUniqueName": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj",
         "projectName": "Lrn.Service",
-        "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Services\\obj\\",
+        "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Services\\Lrn.Service.csproj",
+        "packagesPath": "C:\\Users\\crmart51\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\crmart51\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -236,14 +266,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
-                "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj"
+              "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj": {
+                "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Domain\\Lrn.Domain.csproj"
               },
-              "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj": {
-                "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj"
+              "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj": {
+                "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.CrossCutting\\Lrn.Infra.CrossCutting.csproj"
               },
-              "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj": {
-                "projectPath": "C:\\src\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj"
+              "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj": {
+                "projectPath": "C:\\src\\outros\\lrn-backend\\Lrn.Api\\Lrn.Infra.Data\\Lrn.Infra.Data.csproj"
               }
             }
           }
@@ -272,6 +302,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -280,7 +324,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
