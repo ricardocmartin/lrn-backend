@@ -11,5 +11,7 @@ namespace Lrn.Domain.Entities
         public int Sequence { get; set; }
         public DateTime Created { get; set; }
         public DateTime Modificated { get; set; }
+        public int CourseTopicID { get; set; }
+        public int SectionID { get; set; }
     }
 }

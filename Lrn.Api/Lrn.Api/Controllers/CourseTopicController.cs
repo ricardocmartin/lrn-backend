@@ -19,7 +19,6 @@ namespace Lrn.Api.Controllers
             this.facade = facade;
         }
 
-
         [HttpGet]
         public IActionResult Get()
         {

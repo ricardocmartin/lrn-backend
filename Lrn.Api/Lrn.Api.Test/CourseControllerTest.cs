@@ -38,4 +38,13 @@ namespace Lrn.Api.Test
             _controllerPath = "/api/CourseTopic";
         }
     }
+
+
+    public class SectionControllerTest : TestBase
+    {
+        public SectionControllerTest()
+        {
+            _controllerPath = "/api/Section";
+        }
+    }
 }

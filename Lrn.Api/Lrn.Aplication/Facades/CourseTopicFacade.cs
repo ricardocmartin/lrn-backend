@@ -18,37 +18,43 @@ namespace Lrn.Aplication.Facades
             return service.Get(Id);
         }
 
-        public void GenerateContent() {
+        public void GenerateContent()
+        {
             //Get all topics modifield more then 30 day behind from now
-            var courseTopics = this.List().Where(x=>x.Modificated < DateTime.Now.AddDays(-30));
+            var courseTopics = this.List().Where(x => x.Modificated < DateTime.Now.AddDays(-30));
             YoutubeClientService youtubeService = new YoutubeClientService();
             int videosToReturn = 10;
 
-            foreach (CourseTopic c in courseTopics) {
+            foreach (CourseTopic c in courseTopics)
+            {
                 var videos = youtubeService.FindContent(c.Title, videosToReturn);
 
-                foreach (Content content in videos){
+                foreach (Content content in videos)
+                {
                     //Tenta buscar na base se o video já existe
                     var contentsInBase = serviceContent.Get().Where(x => x.Data == content.Data);
 
                     //se existe
-                    if (contentsInBase.Any()){
+                    if (contentsInBase.Any())
+                    {
                         content.Id = contentsInBase.FirstOrDefault().Id;
                         serviceContent.Put<ContentValidator>(content);
                     }
-                    else {
+                    else
+                    {
                         serviceContent.Post<ContentValidator>(content);
                     }
                 }
 
                 //If api return the videos solicitaded, update course topic to avoid repeting FindContent execution
-                if (videos.Count() == videosToReturn){
+                if (videos.Count() == videosToReturn)
+                {
                     c.Modificated = DateTime.Now;
                     this.Update(c);
                 }
             }
         }
-        
+
         public IList<CourseTopic> List()
         {
             return service.Get();
@@ -67,7 +73,5 @@ namespace Lrn.Aplication.Facades
         {
             service.Delete(new CourseTopic { Id = _Id });
         }
-
-
     }
 }

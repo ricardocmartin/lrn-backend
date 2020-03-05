@@ -30,7 +30,7 @@ CREATE TABLE `tb_section` (
 
 CREATE TABLE `tb_course_topic` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `CourseID` int(11) NOT NULL,
+  `CourseTopicID` int(11) NOT NULL,
   `Title` varchar(255) DEFAULT NULL,
   `Resume` varchar(500) DEFAULT NULL,
   `KeyWords` varchar(255) DEFAULT NULL,
