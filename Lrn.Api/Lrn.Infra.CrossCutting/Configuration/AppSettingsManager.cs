@@ -22,13 +22,5 @@ namespace Lrn.Infra.CrossCutting.Configuration
             }
         }
 
-        public static string PlanosOnlineConnectionString => _config.GetConnectionString("PlanosOnline");
-
-        public static string ToolsManagerConnectionString => _config.GetConnectionString("ToolsManager");
-
-
-        public static string LocalConnectionString => _config.GetConnectionString("Local");
-
-        public static string GetAllConfigurations(string param1, string param2) => _config?.GetSection(param1)[param2];
     }
 }

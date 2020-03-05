@@ -574,6 +574,10 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[8.6.1, )"
+            },
+            "Google.Apis.YouTube.v3": {
+              "target": "Package",
+              "version": "[1.44.0.1869, )"
             }
           },
           "imports": [

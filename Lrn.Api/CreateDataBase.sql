@@ -50,7 +50,7 @@ CREATE TABLE `tb_course_topic` (
 CREATE TABLE `tb_content` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
-  `Description` varchar(1000) DEFAULT NULL,
+  `Description` varchar(2000) DEFAULT NULL,
   `Data` varchar(255) DEFAULT NULL,
   `Thumbnail` varchar(255) DEFAULT NULL,
   `KeyWords` varchar(255) DEFAULT NULL,

@@ -125,6 +125,58 @@
           "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
         }
       },
+      "Google.Apis/1.44.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Core": "1.44.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.44.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.44.0",
+          "Google.Apis.Core": "1.44.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.44.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
+      "Google.Apis.YouTube.v3/1.44.0.1869": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.44.0",
+          "Google.Apis.Auth": "1.44.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "dependencies": {
@@ -2092,6 +2144,103 @@
         "fluentvalidation.dependencyinjectionextensions.nuspec",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
+      ]
+    },
+    "Google.Apis/1.44.0": {
+      "sha512": "8s0/UJWT/r7FEXObFTykRcmYauxU1Xi8IC3HHtYWRT9nUg51m1TjMMoLeBJUkuHw+O1y/Upkkj1ehJJea2naQg==",
+      "type": "package",
+      "path": "google.apis/1.44.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.1.44.0.nupkg.sha512",
+        "google.apis.nuspec",
+        "lib/net45/Google.Apis.PlatformServices.dll",
+        "lib/net45/Google.Apis.dll",
+        "lib/net45/Google.Apis.pdb",
+        "lib/net45/Google.Apis.xml",
+        "lib/netstandard1.3/Google.Apis.dll",
+        "lib/netstandard1.3/Google.Apis.pdb",
+        "lib/netstandard1.3/Google.Apis.xml",
+        "lib/netstandard2.0/Google.Apis.dll",
+        "lib/netstandard2.0/Google.Apis.pdb",
+        "lib/netstandard2.0/Google.Apis.xml"
+      ]
+    },
+    "Google.Apis.Auth/1.44.0": {
+      "sha512": "DB8J2R0fOmX+Am8jMa03W2N1b//U3w4H4QuR3/CjnxuBTeJ42n5kO1EfEX7ikqItyPpC7e9MNLmYID05AwdgxA==",
+      "type": "package",
+      "path": "google.apis.auth/1.44.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.auth.1.44.0.nupkg.sha512",
+        "google.apis.auth.nuspec",
+        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "lib/net45/Google.Apis.Auth.dll",
+        "lib/net45/Google.Apis.Auth.pdb",
+        "lib/net45/Google.Apis.Auth.xml",
+        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.pdb",
+        "lib/netstandard1.3/Google.Apis.Auth.xml",
+        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.pdb",
+        "lib/netstandard2.0/Google.Apis.Auth.xml"
+      ]
+    },
+    "Google.Apis.Core/1.44.0": {
+      "sha512": "cgpYSP+UCgdkt14qEiToHmurbAjqAfTyT/DcguqTwKNYlm90BRI3FS0soWm3ldIa5ckdrriPwcd1gStiXWSusQ==",
+      "type": "package",
+      "path": "google.apis.core/1.44.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.core.1.44.0.nupkg.sha512",
+        "google.apis.core.nuspec",
+        "lib/net45/Google.Apis.Core.dll",
+        "lib/net45/Google.Apis.Core.pdb",
+        "lib/net45/Google.Apis.Core.xml",
+        "lib/netstandard1.3/Google.Apis.Core.dll",
+        "lib/netstandard1.3/Google.Apis.Core.pdb",
+        "lib/netstandard1.3/Google.Apis.Core.xml",
+        "lib/netstandard2.0/Google.Apis.Core.dll",
+        "lib/netstandard2.0/Google.Apis.Core.pdb",
+        "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "Google.Apis.YouTube.v3/1.44.0.1869": {
+      "sha512": "FC9ay2aEAmdbE2QFUZ3T04G6PoeBFLD/G2f9rdB6xxpL2BucWsPe27EasVWTI+syZSFViQRFJSESJT6vdQXoOg==",
+      "type": "package",
+      "path": "google.apis.youtube.v3/1.44.0.1869",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.youtube.v3.1.44.0.1869.nupkg.sha512",
+        "google.apis.youtube.v3.nuspec",
+        "lib/net40/Google.Apis.YouTube.v3.dll",
+        "lib/net40/Google.Apis.YouTube.v3.pdb",
+        "lib/net40/Google.Apis.YouTube.v3.xml",
+        "lib/net45/Google.Apis.YouTube.v3.dll",
+        "lib/net45/Google.Apis.YouTube.v3.pdb",
+        "lib/net45/Google.Apis.YouTube.v3.xml",
+        "lib/netstandard1.0/Google.Apis.YouTube.v3.dll",
+        "lib/netstandard1.0/Google.Apis.YouTube.v3.pdb",
+        "lib/netstandard1.0/Google.Apis.YouTube.v3.xml",
+        "lib/netstandard1.3/Google.Apis.YouTube.v3.dll",
+        "lib/netstandard1.3/Google.Apis.YouTube.v3.pdb",
+        "lib/netstandard1.3/Google.Apis.YouTube.v3.xml",
+        "lib/netstandard2.0/Google.Apis.YouTube.v3.dll",
+        "lib/netstandard2.0/Google.Apis.YouTube.v3.pdb",
+        "lib/netstandard2.0/Google.Apis.YouTube.v3.xml"
       ]
     },
     "Google.Protobuf/3.6.1": {
@@ -6527,6 +6676,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "FluentValidation.AspNetCore >= 8.6.1",
+      "Google.Apis.YouTube.v3 >= 1.44.0.1869",
       "Lrn.Domain >= 1.0.0",
       "Lrn.Infra.CrossCutting >= 1.0.0",
       "Lrn.Infra.Data >= 1.0.0"
@@ -6582,6 +6732,10 @@
           "FluentValidation.AspNetCore": {
             "target": "Package",
             "version": "[8.6.1, )"
+          },
+          "Google.Apis.YouTube.v3": {
+            "target": "Package",
+            "version": "[1.44.0.1869, )"
           }
         },
         "imports": [
