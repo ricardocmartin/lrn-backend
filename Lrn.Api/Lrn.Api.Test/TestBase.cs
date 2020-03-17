@@ -22,11 +22,7 @@ namespace Lrn.Api.Test
             _server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
             _client = _server.CreateClient();
         }
-
-        private bool IsStatusCode200(HttpStatusCode code) {
-            return (code == HttpStatusCode.NoContent || code == HttpStatusCode.OK);
-        }
-
+        
         [Fact]
         public async Task TestGet()
         {
@@ -37,9 +33,11 @@ namespace Lrn.Api.Test
 
             // Act
             var response = await _client.GetAsync(_controllerPath + "/1");
-            
+
             // Assert
-            Assert.True(IsStatusCode200(response.StatusCode));
+            Assert.NotNull(response.EnsureSuccessStatusCode());
+            //Assert.True(IsStatusCode200(response.StatusCode));
+            //Assert.Equal("text/html; charset=utf-8", response.Content.Headers.ContentType.ToString());
         }
 
         [Fact]
@@ -54,7 +52,7 @@ namespace Lrn.Api.Test
             var response = await _client.GetAsync(_controllerPath);
 
             // Assert
-            Assert.True(IsStatusCode200(response.StatusCode));
+            Assert.NotNull(response.EnsureSuccessStatusCode());
         }
     }
 }

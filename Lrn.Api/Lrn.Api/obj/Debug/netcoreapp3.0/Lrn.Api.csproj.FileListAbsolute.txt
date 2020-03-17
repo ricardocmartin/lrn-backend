@@ -316,3 +316,10 @@ C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.Au
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.Auth.dll
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.Core.dll
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.YouTube.v3.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.Auth.PlatformServices.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.Auth.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.Core.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Google.Apis.YouTube.v3.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Redis.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api\bin\Debug\netcoreapp3.0\StackExchange.Redis.StrongName.dll

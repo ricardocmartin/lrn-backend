@@ -467,3 +467,10 @@ C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Lrn.Infra
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Lrn.Infra.Data.pdb
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Lrn.Service.pdb
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\obj\Debug\netcoreapp3.0\Lrn.Api.Test.csproj.CopyComplete
+C:\src\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Google.Apis.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Google.Apis.Auth.PlatformServices.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Google.Apis.Auth.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Google.Apis.Core.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Google.Apis.YouTube.v3.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Redis.dll
+C:\src\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\StackExchange.Redis.StrongName.dll
