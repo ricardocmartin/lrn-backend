@@ -9,6 +9,7 @@
       "Lrn.Service/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "8.6.1",
+          "Google.Apis.YouTube.v3": "1.44.0.1869",
           "Lrn.Domain": "1.0.0",
           "Lrn.Infra.CrossCutting": "1.0.0",
           "Lrn.Infra.Data": "1.0.0"
@@ -125,6 +126,56 @@
           "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.6.1.0"
+          }
+        }
+      },
+      "Google.Apis/1.44.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.44.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.44.0.0",
+            "fileVersion": "1.44.0.0"
+          }
+        }
+      },
+      "Google.Apis.Auth/1.44.0": {
+        "dependencies": {
+          "Google.Apis": "1.44.0",
+          "Google.Apis.Core": "1.44.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.44.0.0",
+            "fileVersion": "1.44.0.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.44.0.0",
+            "fileVersion": "1.44.0.0"
+          }
+        }
+      },
+      "Google.Apis.Core/1.44.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.44.0.0",
+            "fileVersion": "1.44.0.0"
+          }
+        }
+      },
+      "Google.Apis.YouTube.v3/1.44.0.1869": {
+        "dependencies": {
+          "Google.Apis": "1.44.0",
+          "Google.Apis.Auth": "1.44.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {
+            "assemblyVersion": "1.44.0.1869",
+            "fileVersion": "1.44.0.1869"
           }
         }
       },
@@ -274,6 +325,20 @@
       "Microsoft.Win32.SystemEvents/4.6.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.46214"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.46214"
+          }
         }
       },
       "MySql.Data/8.0.19": {
@@ -547,6 +612,26 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.0.0",
           "Microsoft.Win32.SystemEvents": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.46214"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.700.19.46214"
+          }
         }
       },
       "System.Dynamic.Runtime/4.0.11": {
@@ -1270,6 +1355,34 @@
       "sha512": "sha512-AsI9IrXuTWbiJdkxMqQn3ZIg3EqfX2RdtaR3vZsXOx+lvAwEVpCdRiKJiypiUV0tkPpH76058MIJRUtNistk1g==",
       "path": "fluentvalidation.dependencyinjectionextensions/8.6.1",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.8.6.1.nupkg.sha512"
+    },
+    "Google.Apis/1.44.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8s0/UJWT/r7FEXObFTykRcmYauxU1Xi8IC3HHtYWRT9nUg51m1TjMMoLeBJUkuHw+O1y/Upkkj1ehJJea2naQg==",
+      "path": "google.apis/1.44.0",
+      "hashPath": "google.apis.1.44.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.44.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DB8J2R0fOmX+Am8jMa03W2N1b//U3w4H4QuR3/CjnxuBTeJ42n5kO1EfEX7ikqItyPpC7e9MNLmYID05AwdgxA==",
+      "path": "google.apis.auth/1.44.0",
+      "hashPath": "google.apis.auth.1.44.0.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.44.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cgpYSP+UCgdkt14qEiToHmurbAjqAfTyT/DcguqTwKNYlm90BRI3FS0soWm3ldIa5ckdrriPwcd1gStiXWSusQ==",
+      "path": "google.apis.core/1.44.0",
+      "hashPath": "google.apis.core.1.44.0.nupkg.sha512"
+    },
+    "Google.Apis.YouTube.v3/1.44.0.1869": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FC9ay2aEAmdbE2QFUZ3T04G6PoeBFLD/G2f9rdB6xxpL2BucWsPe27EasVWTI+syZSFViQRFJSESJT6vdQXoOg==",
+      "path": "google.apis.youtube.v3/1.44.0.1869",
+      "hashPath": "google.apis.youtube.v3.1.44.0.1869.nupkg.sha512"
     },
     "Google.Protobuf/3.6.1": {
       "type": "package",
