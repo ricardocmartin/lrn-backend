@@ -37,6 +37,7 @@ namespace Lrn.Api
             services.AddTransient<ICourseTopicFacade, CourseTopicFacade>();
             services.AddTransient<IContentFacade, ContentFacade>();
             services.AddTransient<IContentVoteFacade, ContentVoteFacade>();
+            services.AddTransient<ISectionFacade, SectionFacade>();
             services.AddControllers();
             
             services.AddSwaggerGen(c =>

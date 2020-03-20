@@ -18,7 +18,7 @@ namespace Lrn.Infra.Data.Mapping
             Map(x => x.SectionID).Column("SectionID");
             Map(x => x.Created).Column("CreationDate");
             Map(x => x.Modificated).Column("ModificationDate");
-            Map(x => x.CourseTopicID).Column("CourseTopicID");
+            //Map(x => x.CourseTopicID).Column("CourseTopicID");
         }
     }
 }
