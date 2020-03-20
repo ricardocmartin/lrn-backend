@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GraphiQL" Version="1.2.0" />
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Lrn.Domain\Lrn.Domain.csproj" />
     <ProjectReference Include="..\Lrn.Services\Lrn.Service.csproj" />
   </ItemGroup>

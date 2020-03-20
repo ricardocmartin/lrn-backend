@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Lrn.Aplication.Facades;
 using Lrn.Aplication.Interfaces;
+using Lrn.Aplication.ModelQuery;
 using Lrn.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +21,32 @@ namespace Lrn.Api.Controllers
         {
             this.facade = facade;
         }
+
+        /// <summary>
+        /// Search courses
+        /// </summary>
+        /// <param name="query">the serach query like: {"query": "{course(name: \"Programação\") {name,description,created}}"} </param>
+        /// <returns>A list of courses that match given criteria</returns>
+        [HttpPost]
+        [Route("find")]
+        public async Task<IActionResult> Find([FromBody] GraphQLQuery query)
+        {
+            try
+            {
+                var content = await facade.FindAsync(query);
+
+                return new ObjectResult(content);
+            }
+            catch (ArgumentNullException ex)
+            {
+                return NotFound(ex);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
 
         [HttpPost]
         public IActionResult Post([FromBody] Course item)
