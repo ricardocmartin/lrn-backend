@@ -20,13 +20,11 @@ namespace Lrn.Api.Controllers
             this.facade = facade;
         }
 
-
         [HttpGet]
         public IActionResult Get()
         {
             try
             {
-
                 return new ObjectResult(facade.List());
             }
             catch (Exception ex)
