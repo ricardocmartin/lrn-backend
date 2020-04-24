@@ -15,8 +15,16 @@ CREATE TABLE `tb_course` (
   `KeyWords` varchar(255) DEFAULT NULL,
   `Thumbnail` varchar(255) DEFAULT NULL,
   `Idiom` varchar(100) DEFAULT NULL,
+  `Visualizations`int(11) NOT NULL DEFAULT 0,
   `CreationDate` datetime DEFAULT CURRENT_TIMESTAMP,
   `ModificationDate` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `tb_course_view` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CourseID` int(11) NOT NULL,
+  `CreationDate` datetime DEFAULT CURRENT_TIMESTAMP
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 

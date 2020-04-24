@@ -7,6 +7,7 @@ using Lrn.Service.Services;
 using Lrn.Service.Validators;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,6 +23,11 @@ namespace Lrn.Aplication.Facades
         }
 
         public IList<Course> List()
+        {
+            return service.Get();
+        }
+
+        public IList<Course> ListMostVisualized()
         {
             return service.Get();
         }

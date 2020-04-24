@@ -20,4 +20,15 @@ namespace Lrn.Infra.Data.Mapping
             Map(x => x.Modificated).Column("ModificationDate");
         }
     }
+
+    class CourseViewClassMapper : ClassMapper<CourseView>
+    {
+        public CourseViewClassMapper()
+        {
+            Table("tb_course_view");
+            Map(x => x.Id).Column("ID").Key(KeyType.Identity);
+            Map(x => x.CourseID).Column("CourseID");
+            Map(x => x.Created).Column("CreationDate");
+        }
+    }
 }
