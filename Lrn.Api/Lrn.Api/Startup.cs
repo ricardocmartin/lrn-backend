@@ -25,7 +25,7 @@ namespace Lrn.Api
 {
     public class Startup
     {
-        private string MySqlConnection = "Server=50.116.86.24;Port=3306;Database=telef840_lrn;Uid=telef840_lrn;Pwd=zStEPTrVR_bh;Allow User Variables=True";
+        private string MySqlConnection = "Server=50.116.86.24;Port=3306;Database=telef840_lrn_hangfire;Uid=telef840_lrn_hf;Pwd=zStEPTrVR_bh;Allow User Variables=True";
 
 
         public Startup(IConfiguration configuration)
@@ -84,7 +84,7 @@ namespace Lrn.Api
             app.UseHangfireServer();
 
             if (env.IsDevelopment()){
-                app.UseHangfireDashboard();
+                app.UseHangfireDashboard("/jobs");
                 app.UseDeveloperExceptionPage();
             }
 
@@ -111,7 +111,13 @@ namespace Lrn.Api
 
             CacheManager.Configure(cache);
 
-
+            RecurringJob.AddOrUpdate(() => teste(), Cron.Minutely);
         }
+
+        public void teste() {
+            Console.WriteLine("WOOOOOAAAA");
+        }
+
+
     }
 }
