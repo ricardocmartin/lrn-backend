@@ -26,8 +26,8 @@ namespace Lrn.Infra.Data.Repository
         }
 
         private string GetConnectionString() {
-            //return "Server=50.116.86.24;Port=3306;Database=telef840_lrn;Uid=telef840_lrn;Pwd=zStEPTrVR_bh";
-            return "Server=localhost;Port=3306;Database=lrn;Uid=root;Pwd=Techno#1";
+            return "Server=50.116.86.24;Port=3306;Database=telef840_lrn;Uid=telef840_lrn;Pwd=zStEPTrVR_bh";
+            //return "Server=localhost;Port=3306;Database=lrn;Uid=root;Pwd=Techno#1";
             //TODO:
             //return ConfigurationManager.ConnectionStrings["connString"].ConnectionString;
         }

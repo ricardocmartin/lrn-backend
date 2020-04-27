@@ -30,9 +30,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{E187CCC5-D315-412E-8EEA-77EB0370A16D}"
 	ProjectSection(SolutionItems) = preProject
 		CreateDataBase.sql = CreateDataBase.sql
+		Hangfire.sql = Hangfire.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lrn.Api.Test", "Lrn.Api.Test\Lrn.Api.Test.csproj", "{52D5CA71-E36F-4404-A473-B1D1E3A6B2E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lrn.Api.Test", "Lrn.Api.Test\Lrn.Api.Test.csproj", "{52D5CA71-E36F-4404-A473-B1D1E3A6B2E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

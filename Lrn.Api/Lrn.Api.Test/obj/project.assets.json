@@ -250,6 +250,75 @@
           "lib/netstandard1.1/GraphQL-Parser.dll": {}
         }
       },
+      "Hangfire.AspNetCore/1.7.11": {
+        "type": "package",
+        "dependencies": {
+          "Hangfire.Core": "[1.7.11]"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Hangfire.Core/1.7.11": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.Core.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/es/Hangfire.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fa/Hangfire.Core.resources.dll": {
+            "locale": "fa"
+          },
+          "lib/netstandard2.0/nl/Hangfire.Core.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/netstandard2.0/pt-BR/Hangfire.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-PT/Hangfire.Core.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/netstandard2.0/pt/Hangfire.Core.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
+            "locale": "zh"
+          }
+        }
+      },
+      "Hangfire.MySqlStorage/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Dapper": "1.50.5",
+          "Hangfire.Core": "1.6.21",
+          "Microsoft.CSharp": "4.4.1",
+          "MySqlConnector": "0.47.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Hangfire.MySql.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Hangfire.MySql.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/2.0.1": {
         "type": "package",
         "dependencies": {
@@ -1549,7 +1618,7 @@
           "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0": {
+      "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -1971,10 +2040,10 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/4.6.0": {
+      "Microsoft.Win32.SystemEvents/4.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0"
+          "Microsoft.NETCore.Platforms": "3.1.0"
         },
         "compile": {
           "ref/netstandard2.0/_._": {}
@@ -2006,6 +2075,15 @@
         "runtime": {
           "lib/netstandard2.1/MySql.Data.dll": {},
           "lib/netstandard2.1/Ubiety.Dns.Core.dll": {}
+        }
+      },
+      "MySqlConnector/0.47.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/MySqlConnector.dll": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -2731,11 +2809,11 @@
           "lib/netstandard1.0/System.Composition.TypedParts.dll": {}
         }
       },
-      "System.Configuration.ConfigurationManager/4.5.0": {
+      "System.Configuration.ConfigurationManager/4.7.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "4.5.0",
-          "System.Security.Permissions": "4.5.0"
+          "System.Security.Cryptography.ProtectedData": "4.7.0",
+          "System.Security.Permissions": "4.7.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
@@ -2898,11 +2976,11 @@
           "ref/netstandard1.5/System.Diagnostics.Tracing.dll": {}
         }
       },
-      "System.Drawing.Common/4.6.0": {
+      "System.Drawing.Common/4.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
-          "Microsoft.Win32.SystemEvents": "4.6.0"
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.SystemEvents": "4.7.0"
         },
         "compile": {
           "ref/netcoreapp3.0/_._": {}
@@ -3701,11 +3779,11 @@
           "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
-      "System.Security.AccessControl/4.6.0": {
+      "System.Security.AccessControl/4.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
-          "System.Security.Principal.Windows": "4.6.0"
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -3912,7 +3990,7 @@
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
         }
       },
-      "System.Security.Cryptography.ProtectedData/4.5.0": {
+      "System.Security.Cryptography.ProtectedData/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/_._": {}
@@ -3979,11 +4057,11 @@
           "lib/netstandard2.0/System.Security.Cryptography.Xml.dll": {}
         }
       },
-      "System.Security.Permissions/4.6.0": {
+      "System.Security.Permissions/4.7.0": {
         "type": "package",
         "dependencies": {
-          "System.Security.AccessControl": "4.6.0",
-          "System.Windows.Extensions": "4.6.0"
+          "System.Security.AccessControl": "4.7.0",
+          "System.Windows.Extensions": "4.7.0"
         },
         "compile": {
           "ref/netcoreapp3.0/System.Security.Permissions.dll": {}
@@ -4004,7 +4082,7 @@
           "lib/netstandard1.0/System.Security.Principal.dll": {}
         }
       },
-      "System.Security.Principal.Windows/4.6.0": {
+      "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
@@ -4181,10 +4259,10 @@
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
         }
       },
-      "System.Windows.Extensions/4.6.0": {
+      "System.Windows.Extensions/4.7.0": {
         "type": "package",
         "dependencies": {
-          "System.Drawing.Common": "4.6.0"
+          "System.Drawing.Common": "4.7.0"
         },
         "compile": {
           "ref/netcoreapp3.0/System.Windows.Extensions.dll": {}
@@ -4422,13 +4500,16 @@
           "DocumentFormat.OpenXml": "2.10.0",
           "GraphQL": "2.4.0",
           "GraphiQL": "1.2.0",
+          "Hangfire.AspNetCore": "1.7.11",
+          "Hangfire.MySqlStorage": "2.0.2",
           "Lrn.Aplication": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
           "Microsoft.Extensions.Caching.Redis": "2.2.0",
           "Microsoft.Extensions.Logging.Debug": "3.0.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.9.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
-          "Swashbuckle.AspNetCore": "5.0.0"
+          "Swashbuckle.AspNetCore": "5.0.0",
+          "System.Configuration.ConfigurationManager": "4.7.0"
         },
         "compile": {
           "bin/placeholder/Lrn.Api.dll": {}
@@ -4885,6 +4966,103 @@
         "graphql-parser.nuspec",
         "lib/net45/GraphQL-Parser.dll",
         "lib/netstandard1.1/GraphQL-Parser.dll"
+      ]
+    },
+    "Hangfire.AspNetCore/1.7.11": {
+      "sha512": "Z3FM67pW4t+XrYN1Yyx72HxSuiXmm1GsBPdtpfbCXgyFXAsUTJn5MV+1FcUyPSl61E2QwJpaKEGl/vH0N/ThJw==",
+      "type": "package",
+      "path": "hangfire.aspnetcore/1.7.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING",
+        "COPYING.LESSER",
+        "LICENSE.md",
+        "LICENSE_ROYALTYFREE",
+        "LICENSE_STANDARD",
+        "NOTICES",
+        "hangfire.aspnetcore.1.7.11.nupkg.sha512",
+        "hangfire.aspnetcore.nuspec",
+        "lib/net451/Hangfire.AspNetCore.dll",
+        "lib/net451/Hangfire.AspNetCore.xml",
+        "lib/net461/Hangfire.AspNetCore.dll",
+        "lib/net461/Hangfire.AspNetCore.xml",
+        "lib/netcoreapp3.0/Hangfire.AspNetCore.dll",
+        "lib/netcoreapp3.0/Hangfire.AspNetCore.xml",
+        "lib/netstandard1.3/Hangfire.AspNetCore.dll",
+        "lib/netstandard1.3/Hangfire.AspNetCore.xml",
+        "lib/netstandard2.0/Hangfire.AspNetCore.dll",
+        "lib/netstandard2.0/Hangfire.AspNetCore.xml"
+      ]
+    },
+    "Hangfire.Core/1.7.11": {
+      "sha512": "/v+INBYRJJzMt5CPi+qFRsikYjbwUweBwLKGPc9PnDjD1o8MhQ5Ggx2/EOhavkQRwFgBRk5y3jCiD1HKR/WBPw==",
+      "type": "package",
+      "path": "hangfire.core/1.7.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING",
+        "COPYING.LESSER",
+        "LICENSE.md",
+        "LICENSE_ROYALTYFREE",
+        "LICENSE_STANDARD",
+        "NOTICES",
+        "hangfire.core.1.7.11.nupkg.sha512",
+        "hangfire.core.nuspec",
+        "lib/net45/Hangfire.Core.dll",
+        "lib/net45/Hangfire.Core.xml",
+        "lib/net45/es/Hangfire.Core.resources.dll",
+        "lib/net45/fa/Hangfire.Core.resources.dll",
+        "lib/net45/nl/Hangfire.Core.resources.dll",
+        "lib/net45/pt-BR/Hangfire.Core.resources.dll",
+        "lib/net45/pt-PT/Hangfire.Core.resources.dll",
+        "lib/net45/pt/Hangfire.Core.resources.dll",
+        "lib/net45/zh-TW/Hangfire.Core.resources.dll",
+        "lib/net45/zh/Hangfire.Core.resources.dll",
+        "lib/net46/Hangfire.Core.dll",
+        "lib/net46/Hangfire.Core.xml",
+        "lib/net46/es/Hangfire.Core.resources.dll",
+        "lib/net46/fa/Hangfire.Core.resources.dll",
+        "lib/net46/nl/Hangfire.Core.resources.dll",
+        "lib/net46/pt-BR/Hangfire.Core.resources.dll",
+        "lib/net46/pt-PT/Hangfire.Core.resources.dll",
+        "lib/net46/pt/Hangfire.Core.resources.dll",
+        "lib/net46/zh-TW/Hangfire.Core.resources.dll",
+        "lib/net46/zh/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/Hangfire.Core.dll",
+        "lib/netstandard1.3/Hangfire.Core.xml",
+        "lib/netstandard1.3/es/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/fa/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/nl/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/pt-BR/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/pt-PT/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/pt/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/zh-TW/Hangfire.Core.resources.dll",
+        "lib/netstandard1.3/zh/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/Hangfire.Core.dll",
+        "lib/netstandard2.0/Hangfire.Core.xml",
+        "lib/netstandard2.0/es/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/fa/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/nl/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/pt-BR/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/pt-PT/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/pt/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll",
+        "lib/netstandard2.0/zh/Hangfire.Core.resources.dll"
+      ]
+    },
+    "Hangfire.MySqlStorage/2.0.2": {
+      "sha512": "2ZgiXZ6BrTIc91/rVGekmebODq8UHHraan33hJqkGczWXnbEsqgnMLhAnDf6eFhYBIr832RZyuUdlh2hczXV5A==",
+      "type": "package",
+      "path": "hangfire.mysqlstorage/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hangfire.mysqlstorage.2.0.2.nupkg.sha512",
+        "hangfire.mysqlstorage.nuspec",
+        "lib/net452/Hangfire.MySql.dll",
+        "lib/netstandard2.0/Hangfire.MySql.dll"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.0.1": {
@@ -6272,17 +6450,17 @@
         "microsoft.net.test.sdk.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/3.0.0": {
-      "sha512": "TsETIgVJb/AKoYfSP+iCxkuly5d3inZjTdx/ItZLk2CxY85v8083OBS3uai84kK3/baLnS5/b5XGs6zR7SuuHQ==",
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/3.0.0",
+      "path": "microsoft.netcore.platforms/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.3.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -7082,10 +7260,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.Win32.SystemEvents/4.6.0": {
-      "sha512": "Edg+pFW5C8WJb680Za2kTV8TqUi6Ahl/WldRVoOVJ23UQLpDHFspa+umgFjkWZw24ETsU99Cg+ErZz683M4chg==",
+    "Microsoft.Win32.SystemEvents/4.7.0": {
+      "sha512": "mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "type": "package",
-      "path": "microsoft.win32.systemevents/4.6.0",
+      "path": "microsoft.win32.systemevents/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7095,7 +7273,7 @@
         "lib/net461/Microsoft.Win32.SystemEvents.xml",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+        "microsoft.win32.systemevents.4.7.0.nupkg.sha512",
         "microsoft.win32.systemevents.nuspec",
         "ref/net461/Microsoft.Win32.SystemEvents.dll",
         "ref/net461/Microsoft.Win32.SystemEvents.xml",
@@ -7132,6 +7310,22 @@
         "lib/netstandard2.1/Ubiety.Dns.Core.dll",
         "mysql.data.8.0.19.nupkg.sha512",
         "mysql.data.nuspec"
+      ]
+    },
+    "MySqlConnector/0.47.1": {
+      "sha512": "xaguKNuiYX34PYnvxJ+ATr6SoNjbJZqWclqsmqsqdNg68sdjqHP8PPp8IOpuiD/ai0S64dUth3//c7XaArZQQg==",
+      "type": "package",
+      "path": "mysqlconnector/0.47.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.dll",
+        "lib/netcoreapp2.1/MySqlConnector.dll",
+        "lib/netstandard1.3/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "mysqlconnector.0.47.1.nupkg.sha512",
+        "mysqlconnector.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -8337,22 +8531,24 @@
         "system.composition.typedparts.nuspec"
       ]
     },
-    "System.Configuration.ConfigurationManager/4.5.0": {
-      "sha512": "UIFvaFfuKhLr9u5tWMxmVoDPkFeD+Qv8gUuap4aZgVGYSYMdERck4OhLN/2gulAc0nYTEigWXSJNNWshrmxnng==",
+    "System.Configuration.ConfigurationManager/4.7.0": {
+      "sha512": "/anOTeSZCNNI2zDilogWrZ8pNqCmYbzGNexUnNhjW8k0sHqEZ2nHJBp147jBV3hGYswu5lINpNg1vxR7bnqvVA==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/4.5.0",
+      "path": "system.configuration.configurationmanager/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/net461/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
         "ref/net461/System.Configuration.ConfigurationManager.dll",
         "ref/net461/System.Configuration.ConfigurationManager.xml",
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+        "system.configuration.configurationmanager.4.7.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -8833,10 +9029,10 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.Drawing.Common/4.6.0": {
-      "sha512": "2A3spjjoPZnvpVh/sDTzd+0H8ZqTdr+hH/6obB8MMfG81EJ85PmxCKDBxhBVQiA25PliKAZ1sKogDcq9mSnFEA==",
+    "System.Drawing.Common/4.7.0": {
+      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
       "type": "package",
-      "path": "system.drawing.common/4.6.0",
+      "path": "system.drawing.common/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8866,7 +9062,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "system.drawing.common.4.6.0.nupkg.sha512",
+        "system.drawing.common.4.7.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -11170,10 +11366,10 @@
         "system.runtime.serialization.primitives.nuspec"
       ]
     },
-    "System.Security.AccessControl/4.6.0": {
-      "sha512": "gmlk6khICtVhiUnVBBtlsH0H/5QFDqhTZgtpp3AX14wWE6OIE+BX95NLD+X4AolXnIy/oXpNNmXYnsNfW1KuDQ==",
+    "System.Security.AccessControl/4.7.0": {
+      "sha512": "JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
       "type": "package",
-      "path": "system.security.accesscontrol/4.6.0",
+      "path": "system.security.accesscontrol/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11210,7 +11406,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
         "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
         "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.accesscontrol.4.6.0.nupkg.sha512",
+        "system.security.accesscontrol.4.7.0.nupkg.sha512",
         "system.security.accesscontrol.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -11440,10 +11636,10 @@
         "system.security.cryptography.primitives.nuspec"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/4.5.0": {
-      "sha512": "wLBKzFnDCxP12VL9ANydSYhk59fC4cvOr9ypYQLPnAj48NQIhqnjdD2yhP8yEKyBJEjERWS9DisKL7rX5eU25Q==",
+    "System.Security.Cryptography.ProtectedData/4.7.0": {
+      "sha512": "ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/4.5.0",
+      "path": "system.security.cryptography.protecteddata/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11453,8 +11649,10 @@
         "lib/MonoTouch10/_._",
         "lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net461/System.Security.Cryptography.ProtectedData.xml",
         "lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
@@ -11473,9 +11671,11 @@
         "ref/xamarinwatchos10/_._",
         "runtimes/win/lib/net46/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.xml",
         "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.ProtectedData.dll",
         "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
-        "system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -11558,10 +11758,10 @@
         "version.txt"
       ]
     },
-    "System.Security.Permissions/4.6.0": {
-      "sha512": "W3Uxog9KCZAmGYsOFHgJnb7L2q+SDbxS3vGnFHmErUnXuIjWYpIh1KVTlua7qmPdrlRCkAcTF9dImv+jciBPOQ==",
+    "System.Security.Permissions/4.7.0": {
+      "sha512": "dkOV6YYVBnYRa15/yv004eCGRBVADXw8qRbbNiCn/XpdJSUXkkUeIvdvFHkvnko4CdKMqG8yRHC4ox83LSlMsQ==",
       "type": "package",
-      "path": "system.security.permissions/4.6.0",
+      "path": "system.security.permissions/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11579,7 +11779,7 @@
         "ref/netcoreapp3.0/System.Security.Permissions.xml",
         "ref/netstandard2.0/System.Security.Permissions.dll",
         "ref/netstandard2.0/System.Security.Permissions.xml",
-        "system.security.permissions.4.6.0.nupkg.sha512",
+        "system.security.permissions.4.7.0.nupkg.sha512",
         "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -11644,10 +11844,10 @@
         "system.security.principal.nuspec"
       ]
     },
-    "System.Security.Principal.Windows/4.6.0": {
-      "sha512": "Mdukseovp0YIGaz16FMH6nbfgZkrCFOJbtXQptv0aeBO9h775Ilb9+TDwLVTKikoW7y7CY7lpoXl9zmZ5G3ndA==",
+    "System.Security.Principal.Windows/4.7.0": {
+      "sha512": "ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "type": "package",
-      "path": "system.security.principal.windows/4.6.0",
+      "path": "system.security.principal.windows/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11692,7 +11892,7 @@
         "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
         "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
         "runtimes/win/lib/uap10.0.16299/_._",
-        "system.security.principal.windows.4.6.0.nupkg.sha512",
+        "system.security.principal.windows.4.7.0.nupkg.sha512",
         "system.security.principal.windows.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -12322,10 +12522,10 @@
         "system.threading.timer.nuspec"
       ]
     },
-    "System.Windows.Extensions/4.6.0": {
-      "sha512": "GL4izk0KgeyXklUOHViAk7y1IOYVYcn8nDpJZgcCqNzTGv2xd+8rgGgMKMo8G9nvfEuRCrNxWnGc74EiuYH2YA==",
+    "System.Windows.Extensions/4.7.0": {
+      "sha512": "CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "type": "package",
-      "path": "system.windows.extensions/4.6.0",
+      "path": "system.windows.extensions/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12337,7 +12537,7 @@
         "ref/netcoreapp3.0/System.Windows.Extensions.xml",
         "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.xml",
-        "system.windows.extensions.4.6.0.nupkg.sha512",
+        "system.windows.extensions.4.7.0.nupkg.sha512",
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
