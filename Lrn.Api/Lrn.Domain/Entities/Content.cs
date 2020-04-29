@@ -9,6 +9,7 @@ namespace Lrn.Domain.Entities
         public string Title { get; set; }
         public string Description { get; set; }
         public string Data { get; set; }
+        public int CourseTopicId { get; set; }
         public ContentType ContentType { get; set; }
         public string Thumbnail { get; set; }
         public string Idiom { get; set; }

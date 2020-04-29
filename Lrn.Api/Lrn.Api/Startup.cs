@@ -56,12 +56,12 @@ namespace Lrn.Api
             services.AddHangfire(configuration => { 
                 configuration.UseStorage(new MySqlStorage(MySqlConnection, new MySqlStorageOptions
                 {
-                    //QueuePollInterval = TimeSpan.FromSeconds(15),
-                    //JobExpirationCheckInterval = TimeSpan.FromHours(1),
-                    //CountersAggregateInterval = TimeSpan.FromMinutes(5),
-                    //PrepareSchemaIfNecessary = true,
-                    //DashboardJobListLimit = 50000,
-                    //TransactionTimeout = TimeSpan.FromMinutes(1),
+                    QueuePollInterval = TimeSpan.FromSeconds(15),
+                    JobExpirationCheckInterval = TimeSpan.FromHours(1),
+                    CountersAggregateInterval = TimeSpan.FromMinutes(5),
+                    PrepareSchemaIfNecessary = true,
+                    DashboardJobListLimit = 50000,
+                    TransactionTimeout = TimeSpan.FromMinutes(1),
                     TablesPrefix = "hf_"
                 }));
             });
@@ -111,7 +111,7 @@ namespace Lrn.Api
 
             CacheManager.Configure(cache);
 
-            RecurringJob.AddOrUpdate(() => teste(), Cron.Minutely);
+            //RecurringJob.AddOrUpdate(() => teste(), Cron.Minutely);
         }
 
         public void teste() {

@@ -24,7 +24,7 @@ namespace Lrn.Api.Controllers
         public IActionResult GenerateContent()
         {
             try{
-                courseTopicFacade.GenerateContent();
+                courseTopicFacade.GenerateContent(0);
                 var Result = new Dictionary<string, string>();
                 Result.Add("Status", "OK");
 

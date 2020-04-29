@@ -518,8 +518,6 @@ C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\runtimes\
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\FluentAssertions.Core.dll
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\FluentAssertions.dll
 C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Hangfire.MySql.dll
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\linq2db.dll
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Owin.dll
+C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\Hangfire.AspNetCore.dll
+C:\src\outros\lrn-backend\Lrn.Api\Lrn.Api.Test\bin\Debug\netcoreapp3.0\MySqlConnector.dll

@@ -1,5 +1,6 @@
 ﻿using Lrn.Aplication.Interfaces;
 using Lrn.Domain.Entities;
+using Lrn.Infra.CrossCutting.Log;
 using Lrn.Service.Services;
 using Lrn.Service.Validators;
 using System;
@@ -18,39 +19,54 @@ namespace Lrn.Aplication.Facades
             return service.Get(Id);
         }
 
-        public void GenerateContent()
+        public void GenerateContent(int DaysOfSet)
         {
             //Get all topics modifield more then 30 day behind from now
-            var courseTopics = this.List().Where(x => x.Modificated < DateTime.Now.AddDays(-30));
+            var courseTopics = this.List().Where(x => x.Modificated < DateTime.Now.AddDays(-DaysOfSet));
+            //var courseTopics = this.List().OrderByDescending(x => x.Modificated).Take(3);
+
             YoutubeClientService youtubeService = new YoutubeClientService();
             int videosToReturn = 10;
 
             foreach (CourseTopic c in courseTopics)
             {
-                var videos = youtubeService.FindContent(c.Title, videosToReturn);
-
-                foreach (Content content in videos)
+                try
                 {
-                    //Tenta buscar na base se o video já existe
-                    var contentsInBase = serviceContent.Get().Where(x => x.Data == content.Data);
+                    var videos = youtubeService.FindContent(c.Title, videosToReturn);
 
-                    //se existe
-                    if (contentsInBase.Any())
+                    foreach (Content content in videos)
                     {
-                        content.Id = contentsInBase.FirstOrDefault().Id;
-                        serviceContent.Put<ContentValidator>(content);
+                        content.CourseTopicId = c.Id;
+
+                        //Tenta buscar na base se o video já existe
+                        var contentsInBase = serviceContent.Get().Where(x => x.Data == content.Data);
+
+                        //se existe
+                        if (contentsInBase.Any())
+                        {
+                            content.Id = contentsInBase.FirstOrDefault().Id;
+                            serviceContent.Put<ContentValidator>(content);
+                        }
+                        else
+                        {
+                            serviceContent.Post<ContentValidator>(content);
+                        }
                     }
-                    else
+
+                    //If api return the videos solicitaded, update course topic to avoid repeting FindContent execution
+                    if (videos.Count() == videosToReturn)
                     {
-                        serviceContent.Post<ContentValidator>(content);
+                        c.Modificated = DateTime.Now;
+                        this.Update(c);
                     }
                 }
-
-                //If api return the videos solicitaded, update course topic to avoid repeting FindContent execution
-                if (videos.Count() == videosToReturn)
-                {
-                    c.Modificated = DateTime.Now;
-                    this.Update(c);
+                catch (Exception ex) {
+                    if (ex.Message == "Cota excedida"){
+                        break;
+                    }
+                    else{
+                        LogManager.Error(ex.Message);
+                    }
                 }
             }
         }

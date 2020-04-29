@@ -107,18 +107,6 @@
           }
         }
       },
-      "FluentAssertions/4.1.0": {
-        "runtime": {
-          "lib/net45/FluentAssertions.Core.dll": {
-            "assemblyVersion": "4.1.0.0",
-            "fileVersion": "4.1.0.0"
-          },
-          "lib/net45/FluentAssertions.dll": {
-            "assemblyVersion": "4.1.0.0",
-            "fileVersion": "4.1.0.0"
-          }
-        }
-      },
       "FluentValidation/8.6.1": {
         "dependencies": {
           "System.ComponentModel.Annotations": "4.6.0"
@@ -255,6 +243,17 @@
           }
         }
       },
+      "Hangfire.AspNetCore/1.7.11": {
+        "dependencies": {
+          "Hangfire.Core": "1.7.11"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
+            "assemblyVersion": "1.7.11.0",
+            "fileVersion": "1.7.11.0"
+          }
+        }
+      },
       "Hangfire.Core/1.7.11": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
@@ -292,37 +291,21 @@
           }
         }
       },
-      "Hangfire.MySql/0.0.7": {
+      "Hangfire.MySqlStorage/2.0.2": {
         "dependencies": {
-          "FluentAssertions": "4.1.0",
+          "Dapper": "2.0.30",
           "Hangfire.Core": "1.7.11",
-          "Newtonsoft.Json": "12.0.3",
-          "Owin": "1.0.0",
-          "linq2db.MySql": "1.0.7.3"
+          "Microsoft.CSharp": "4.5.0",
+          "MySqlConnector": "0.47.1",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
-          "lib/net45/Hangfire.MySql.dll": {
-            "assemblyVersion": "0.0.7.0",
-            "fileVersion": "0.0.7.0"
-          }
-        }
-      },
-      "linq2db/0.0.1": {
-        "runtime": {
-          "lib/net40-full/linq2db.dll": {
+          "lib/netstandard2.0/Hangfire.MySql.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "linq2db.MySql/1.0.7.3": {
-        "dependencies": {
-          "MySql.Data": "8.0.19",
-          "linq2db": "0.0.1",
-          "linq2db.t4models": "0.0.1"
-        }
-      },
-      "linq2db.t4models/0.0.1": {},
       "Microsoft.AspNetCore.Antiforgery/2.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.DataProtection": "2.0.1",
@@ -1618,6 +1601,14 @@
           }
         }
       },
+      "MySqlConnector/0.47.1": {
+        "runtime": {
+          "lib/netcoreapp2.1/MySqlConnector.dll": {
+            "assemblyVersion": "0.47.1.0",
+            "fileVersion": "0.47.1.0"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1694,14 +1685,6 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {
             "assemblyVersion": "4.7.0.5",
             "fileVersion": "4.7.0.5148"
-          }
-        }
-      },
-      "Owin/1.0.0": {
-        "runtime": {
-          "lib/net40/Owin.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -3183,8 +3166,8 @@
           "DocumentFormat.OpenXml": "2.10.0",
           "GraphQL": "2.4.0",
           "GraphiQL": "1.2.0",
-          "Hangfire.Core": "1.7.11",
-          "Hangfire.MySql": "0.0.7",
+          "Hangfire.AspNetCore": "1.7.11",
+          "Hangfire.MySqlStorage": "2.0.2",
           "Lrn.Aplication": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
           "Microsoft.Extensions.Caching.Redis": "2.2.0",
@@ -3313,13 +3296,6 @@
       "path": "documentformat.openxml/2.10.0",
       "hashPath": "documentformat.openxml.2.10.0.nupkg.sha512"
     },
-    "FluentAssertions/4.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Svj/wSajXH09EEHk0a+H1MMbMCaH6M6j92wPa7EM2OhK2/K2yW7PDfJqLKy84+Lu6CGi6c2/cQ4qgyub0H1Dsg==",
-      "path": "fluentassertions/4.1.0",
-      "hashPath": "fluentassertions.4.1.0.nupkg.sha512"
-    },
     "FluentValidation/8.6.1": {
       "type": "package",
       "serviceable": true,
@@ -3397,6 +3373,13 @@
       "path": "graphql-parser/3.0.0",
       "hashPath": "graphql-parser.3.0.0.nupkg.sha512"
     },
+    "Hangfire.AspNetCore/1.7.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z3FM67pW4t+XrYN1Yyx72HxSuiXmm1GsBPdtpfbCXgyFXAsUTJn5MV+1FcUyPSl61E2QwJpaKEGl/vH0N/ThJw==",
+      "path": "hangfire.aspnetcore/1.7.11",
+      "hashPath": "hangfire.aspnetcore.1.7.11.nupkg.sha512"
+    },
     "Hangfire.Core/1.7.11": {
       "type": "package",
       "serviceable": true,
@@ -3404,33 +3387,12 @@
       "path": "hangfire.core/1.7.11",
       "hashPath": "hangfire.core.1.7.11.nupkg.sha512"
     },
-    "Hangfire.MySql/0.0.7": {
+    "Hangfire.MySqlStorage/2.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hob73MVMCiovGrfVtPYlPZYCfD5XRi/V23PMMJ0YBWFggLxPgG3BmGaqG32M91iJkSt/p1sGZkTuTgTFU/RVmA==",
-      "path": "hangfire.mysql/0.0.7",
-      "hashPath": "hangfire.mysql.0.0.7.nupkg.sha512"
-    },
-    "linq2db/0.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-YP91n34bsZPg3WMowSKAflkuNCXKamxwOLr/9ms31XY59UP8hZ69o2pE+8CnRNzHAwWHOAFefj22NsUFqPpM/g==",
-      "path": "linq2db/0.0.1",
-      "hashPath": "linq2db.0.0.1.nupkg.sha512"
-    },
-    "linq2db.MySql/1.0.7.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6vDSiq9KopsQPDuqDYaT8vWeRt3gqZPPnQZryNn0Vsu+iPJIL2AU0icFXjiH/DzfaYL+AItxDLUMSVvKVUnveQ==",
-      "path": "linq2db.mysql/1.0.7.3",
-      "hashPath": "linq2db.mysql.1.0.7.3.nupkg.sha512"
-    },
-    "linq2db.t4models/0.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-G99CxlgqzLGoAi3/w1Gjovkkc8ah+rcNhYU3ZoOppCMfGsyGr7KYs3gXTfz6Yl7FmooBK6KtRd+6LKjbJBt2uA==",
-      "path": "linq2db.t4models/0.0.1",
-      "hashPath": "linq2db.t4models.0.0.1.nupkg.sha512"
+      "sha512": "sha512-2ZgiXZ6BrTIc91/rVGekmebODq8UHHraan33hJqkGczWXnbEsqgnMLhAnDf6eFhYBIr832RZyuUdlh2hczXV5A==",
+      "path": "hangfire.mysqlstorage/2.0.2",
+      "hashPath": "hangfire.mysqlstorage.2.0.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/2.0.1": {
       "type": "package",
@@ -4146,6 +4108,13 @@
       "path": "mysql.data/8.0.19",
       "hashPath": "mysql.data.8.0.19.nupkg.sha512"
     },
+    "MySqlConnector/0.47.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xaguKNuiYX34PYnvxJ+ATr6SoNjbJZqWclqsmqsqdNg68sdjqHP8PPp8IOpuiD/ai0S64dUth3//c7XaArZQQg==",
+      "path": "mysqlconnector/0.47.1",
+      "hashPath": "mysqlconnector.0.47.1.nupkg.sha512"
+    },
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -4173,13 +4142,6 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
-    },
-    "Owin/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
-      "path": "owin/1.0.0",
-      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

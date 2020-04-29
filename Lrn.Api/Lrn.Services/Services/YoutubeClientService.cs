@@ -7,6 +7,7 @@ using Google.Apis.YouTube.v3;
 using Google.Apis.Services;
 using Google.Apis.YouTube.v3.Data;
 using System.IO;
+using Lrn.Infra.CrossCutting.Log;
 
 namespace Lrn.Service.Services
 {
@@ -14,7 +15,7 @@ namespace Lrn.Service.Services
     {
         private YouTubeService youTubeService;
         private YoutubeClientService _youtubeClientService;
-        private readonly string _serviceKey = "AIzaSyDomxHS-8MnEN10p5pGK6tI-c5d8I_e1VY";
+        private readonly string _serviceKey = "AIzaSyD5UY_3F_IdpVzXm-XGrWsd29uulAAwCkM";
 
         public YoutubeClientService()
         {
@@ -36,33 +37,61 @@ namespace Lrn.Service.Services
         }
 
         public List<Content> FindContent(string q, int maxResults) {
-            //https://developers.google.com/youtube/v3/code_samples/dotnet?hl=pt#search_by_keyword
 
             var contentist = new List<Content>();
 
-            SearchResource.ListRequest listRequest = youTubeService.Search.List("snippet");
-            listRequest.Q = q;
-            listRequest.Order = SearchResource.ListRequest.OrderEnum.Relevance;
-            listRequest.Type = "video";
-            listRequest.RegionCode = "BRA"; //TODO: reginalizar
-            listRequest.MaxResults = maxResults;
+            try
+            {
+                //https://developers.google.com/youtube/v3/code_samples/dotnet?hl=pt#search_by_keyword
 
-            SearchListResponse searchResponse = listRequest.Execute();
+                SearchResource.ListRequest listRequest = youTubeService.Search.List("snippet");
+                listRequest.Q = q;
+                listRequest.Order = SearchResource.ListRequest.OrderEnum.Relevance;
+                listRequest.Type = "video";
+                //listRequest.RegionCode = "BRA"; //TODO: reginalizar
+                listRequest.MaxResults = maxResults;
 
-            foreach (SearchResult searchResult in searchResponse.Items) {
-                var content = new Content();
+                SearchListResponse searchResponse = listRequest.Execute();
 
-                content.ContentType = ContentType.YoutubeVideo;
-                content.Created = DateTime.Now;
-                content.Data = searchResult.Id.VideoId;
-                content.Idiom = "PT-BR"; //TODO
-                content.Modificated = DateTime.Now;
-                content.Thumbnail = searchResult.Snippet.Thumbnails.Standard.Url;
-                content.Title = searchResult.Snippet.Title;
-                content.Description = searchResult.Snippet.Description;
+                foreach (SearchResult searchResult in searchResponse.Items)
+                {
+                    contentist.Add(new Content
+                    {
+                        ContentType = ContentType.YoutubeVideo,
+                        Created = DateTime.Now,
+                        Data = searchResult.Id.VideoId,
+                        Idiom = "PT-BR", //TODO
+                        Modificated = DateTime.Now,
+                        Thumbnail = GetThumbNail(searchResult.Snippet.Thumbnails),
+                        Title = searchResult.Snippet.Title,
+                        Description = searchResult.Snippet.Description,
+                    });
+                }
+            }
+            catch (Exception ex) {
+                //TODO: Melhorar essa verificação, precisa pera a exceptions correta e verificar se é uma System.Net.HttpStatusCode.Forbidden
+                if (ex.Message.Contains("The request cannot be completed because you have exceeded your")){
+                    LogManager.Warning($"A cota de consumo do youtube foi excedida para a chave {_serviceKey}");
+                    throw new Exception("Cota excedida");
+                }
+                else
+                    throw ex;
             }
 
             return contentist;
+        }
+
+        private string GetThumbNail(ThumbnailDetails t) {
+            if (t.High != null)
+                return t.High.Url;
+            if (t.Medium != null)
+                return t.Medium.Url;
+            if (t.Standard != null)
+                return t.Standard.Url;
+            if (t.Default__ != null)
+                return t.Default__.Url;
+
+            return "";
         }
 
 

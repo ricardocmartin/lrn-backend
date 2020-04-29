@@ -10,6 +10,6 @@ namespace Lrn.Aplication.Interfaces
         void Insert(CourseTopic obj);
         IList<CourseTopic> List();
         void Update(CourseTopic obj);
-        void GenerateContent();
+        void GenerateContent(int DaysOfSet);
     }
 }
