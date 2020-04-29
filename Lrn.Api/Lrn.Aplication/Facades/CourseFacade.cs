@@ -1,5 +1,6 @@
 ﻿using GraphQL;
 using GraphQL.Types;
+using Lrn.Aplication.DTOs;
 using Lrn.Aplication.Interfaces;
 using Lrn.Aplication.ModelQuery;
 using Lrn.Domain.Entities;
@@ -16,10 +17,24 @@ namespace Lrn.Aplication.Facades
     public class CourseFacade : ICourseFacade
     {
         private BaseService<Course> service = new BaseService<Course>();
+        private BaseService<CourseTopic> courseTopicService = new BaseService<CourseTopic>();
 
         public Course Get(int Id)
         {
             return service.Get(Id);
+        }
+
+        public CourseDTO GetFull(int Id)
+        {
+            var course = service.Get(Id);
+            return new CourseDTO(course){
+                CourseTopics = courseTopicService.Get().Where(x => x.CourseID == Id).ToList()
+            };
+        }
+
+        public IList<Course> ListHome()
+        {
+            return service.Get().OrderByDescending(x => x.Created).Take(9).ToList();
         }
 
         public IList<Course> List()

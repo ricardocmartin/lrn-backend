@@ -1,14 +1,3 @@
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\obj\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.csprojAssemblyReference.cache
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\obj\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.AssemblyInfoInputs.cache
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\obj\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.AssemblyInfo.cs
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\obj\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.dll
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\obj\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.pdb
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.deps.json
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.dll
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.pdb
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Domain.dll
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Domain.pdb
-C:\src\outros\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\obj\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.csproj.CopyComplete
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.deps.json
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.dll
 C:\src\lrn-backend\Lrn.Api\Lrn.Infra.CrossCutting\bin\Debug\netcoreapp3.0\Lrn.Infra.CrossCutting.pdb

@@ -28,7 +28,7 @@ namespace Lrn.Api.Controllers
         /// <param name="query">the serach query like: {"query": "{course(name: \"Programação\") {name,description,created}}"} </param>
         /// <returns>A list of courses that match given criteria</returns>
         [HttpPost]
-        [Route("find")]
+        [Route("search")]
         public async Task<IActionResult> Find([FromBody] GraphQLQuery query)
         {
             try
@@ -104,13 +104,43 @@ namespace Lrn.Api.Controllers
                 return BadRequest(ex);
             }
         }
+        
+        [HttpGet("home")]
+        public IActionResult Home()
+        {
+            try
+            {
+                return new ObjectResult(facade.ListHome());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+        
+        [HttpGet("full/{id}")]
+        public IActionResult GetFull(int id)
+        {
+            try
+            {
+                return new ObjectResult(facade.GetFull(id));
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
 
         [HttpGet]
         public IActionResult Get()
         {
             try
             {
-                
+
                 return new ObjectResult(facade.List());
             }
             catch (Exception ex)
