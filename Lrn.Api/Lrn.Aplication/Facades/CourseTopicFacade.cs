@@ -19,10 +19,14 @@ namespace Lrn.Aplication.Facades
             return service.Get(Id);
         }
 
+        public void GenerateContent() {
+            this.GenerateContent(0);
+        }
+
         public void GenerateContent(int DaysOfSet)
         {
             //Get all topics modifield more then 30 day behind from now
-            var courseTopics = this.List().Where(x => x.Modificated < DateTime.Now.AddDays(-DaysOfSet));
+            var courseTopics = this.List().Where(x => x.Modificated < DateTime.Now.AddDays(-DaysOfSet)).OrderBy(x => x.Modificated);
             //var courseTopics = this.List().OrderByDescending(x => x.Modificated).Take(3);
 
             YoutubeClientService youtubeService = new YoutubeClientService();

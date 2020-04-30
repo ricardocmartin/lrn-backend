@@ -38,13 +38,15 @@ namespace Lrn.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+            
             services.AddTransient<ICourseFacade, CourseFacade>();
             services.AddTransient<ICourseTopicFacade, CourseTopicFacade>();
             services.AddTransient<IContentFacade, ContentFacade>();
             services.AddTransient<IContentVoteFacade, ContentVoteFacade>();
             services.AddTransient<ISectionFacade, SectionFacade>();
             services.AddControllers();
-            
+                        
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Values API", Version= "v1"});
@@ -82,6 +84,14 @@ namespace Lrn.Api
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDistributedCache cache)
         {
             app.UseHangfireServer();
+
+            //TODO: AllowAnyOrigin??
+            app.UseCors(
+                options => options
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin()
+            );
 
             if (env.IsDevelopment()){
                 app.UseHangfireDashboard("/jobs");

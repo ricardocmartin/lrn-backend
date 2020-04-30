@@ -34,7 +34,7 @@ namespace Lrn.Aplication.Facades
 
         public IList<Course> ListHome()
         {
-            return service.Get().OrderByDescending(x => x.Created).Take(9).ToList();
+            return service.Get().OrderBy(x => x.Created).Take(9).ToList();
         }
 
         public IList<Course> List()
