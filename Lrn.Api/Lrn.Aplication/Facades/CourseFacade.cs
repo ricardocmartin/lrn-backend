@@ -37,6 +37,32 @@ namespace Lrn.Aplication.Facades
             return service.Get().OrderBy(x => x.Created).Take(9).ToList();
         }
 
+        public IList<Course> Find(string query, int limit, bool asc)
+        {
+            List<Course> response = null;
+            query = query.ToLower();
+
+            if (asc) {
+                response =
+                    service.Get()
+                        .Where(x => x.Name.ToLower().Contains(query) || x.Description.ToLower().Contains(query))
+                        .OrderBy(x => x.Created)
+                        .Take(limit)
+                        .ToList();
+            }
+            else
+            {
+                response =
+                    service.Get()
+                        .Where(x => x.Name.ToLower().Contains(query) || x.Description.ToLower().Contains(query))
+                        .OrderByDescending(x => x.Created)
+                        .Take(limit)
+                        .ToList();
+            }
+
+            return response;
+        }
+
         public IList<Course> List()
         {
             return service.Get();

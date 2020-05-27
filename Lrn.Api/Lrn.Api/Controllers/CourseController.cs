@@ -47,6 +47,25 @@ namespace Lrn.Api.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("query/{queryTerm}/{limit}/{asc}")]
+        public IActionResult Find(string queryTerm, int limit = 10, bool asc = false)
+        {
+            try
+            {
+                return new ObjectResult(facade.Find(queryTerm, limit, asc));
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
+
+
 
         [HttpPost]
         public IActionResult Post([FromBody] Course item)

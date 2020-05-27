@@ -17,5 +17,6 @@ namespace Lrn.Aplication.Interfaces
         IList<Course> List();
         IList<Course> ListHome();
         void Update(Course obj);
+        IList<Course> Find(string query, int limit, bool asc);
     }
 }
